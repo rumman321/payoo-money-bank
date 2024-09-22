@@ -15,3 +15,11 @@ function getTExtFieldValueByID(id){
     const textNumber=parseFloat(textValue)
     return textNumber
 }
+
+function showSectionById(){
+    document.getElementById('addmoney-form').add('hidden')
+    document.getElementById('cashout-form').add('hidden')
+    document.getElementById('transaction-form').add('hidden')
+    // show the section with the provided id
+    document.getElementById(id).remove('hidden')
+}
